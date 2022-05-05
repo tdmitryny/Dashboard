@@ -1,8 +1,10 @@
-import React from 'react'
+import "./home.css";
 
-const Home = () => {
+export const Home = () => {
   return (
-    <div>Home</div>
+    <div className="home">
+        <h1 class="title">EcomTrack</h1>
+    </div>
   )
 }
 
