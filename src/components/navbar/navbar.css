@@ -1,0 +1,72 @@
+.navbar {
+  height: 50px;
+  border-bottom: 0.5px solid rgb(231, 228, 228);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+.items {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid lightgray;
+  padding: 3px;
+}
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.counter {
+  width: 18px;
+  height: 18px;
+  border: 2px;
+  border-style: solid;
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
