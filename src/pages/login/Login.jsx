@@ -1,8 +1,9 @@
 import './login.css'
 
-export function Login() {
+export const Login = () => {
+
   return (
-    <div>Login</div>
+    <div className='login'>Login</div>
   )
 }
 

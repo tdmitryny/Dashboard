@@ -1,6 +1,6 @@
 import './single.css';
 
-export function Single() {
+export const Single = () => {
   return (
     <div>Single</div>
   )
