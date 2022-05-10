@@ -1,0 +1,19 @@
+.featured {
+  flex: 2;
+  -webkit-box-shadow: -1px 1px 12px -5px #000000;
+  box-shadow: -1px 1px 12px -5px #000000;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.top__feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+}
+
+.titles {
+  font-size: 16px;
+  font-weight: 500;
+}

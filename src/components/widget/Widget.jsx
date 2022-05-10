@@ -39,7 +39,7 @@ switch(type){
     data ={
         title:"EARNING",
         isMoney:true,
-        link: "Viewe Net Earning",
+        link: "View Net Earning",
         icon: (
             <PointOfSaleOutlinedIcon className='icon__widget'
             style={{color:"green",
