@@ -16,3 +16,17 @@
 .charts {
   padding: 5px 20px;
 }
+
+.listContainer {
+  -webkit-box-shadow: -1px 1px 12px -5px #000000;
+  box-shadow: -1px 1px 12px -5px #000000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.listTitle {
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 15px;
+}
