@@ -12,11 +12,11 @@ const data = [
 
 ]
 
-export const Charts = () => {
+export const Charts = ({aspect, title}) => {
   return (
     <div className='chart'>
-        <div className="titles">Last 6 Months(Revenue) </div>
-        <ResponsiveContainer width="100%" height="100%">
+        <div className="titles">{title}</div>
+        <ResponsiveContainer width="100%" aspect={aspect}>
     <AreaChart width={730} height={250} data={data}
   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
   <defs>
