@@ -10,6 +10,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { userInputs } from './formSourse';
+import { productInputs } from './formSourse';
 
 
 function App() {
@@ -24,13 +26,13 @@ function App() {
         <Route path='users'>
           <Route index element={<List/>}/>
           <Route path=":userId" element={<Single/>}/>
-          <Route path="new" element={<New/>}/>
+          <Route path="new" element={<New inputs={userInputs} title="Add New User"/>}/>
         </Route>
       {/* Users */}
       <Route path='products'>
           <Route index element={<List/>}/>
           <Route path=":productId" element={<Single/>}/>
-          <Route path="new" element={<New/>}/>
+          <Route path="new" element={<New inputs={productInputs} title="Add New Product"/>}/>
         </Route>
       </Route>
     </Routes>
