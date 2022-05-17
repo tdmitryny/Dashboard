@@ -4,6 +4,7 @@ import {Login} from '../src/pages/login/Login';
 import {List} from '../src/pages/list/List';
 import {New} from '../src/pages/new/New';
 import {Single} from '../src/pages/single/Single';
+import './style/dark.css';
 
 import {
   BrowserRouter,
@@ -16,7 +17,7 @@ import { productInputs } from './formSourse';
 
 function App() {
   return (
-    
+    <div className='app'>
     <BrowserRouter>
     <Routes>
       <Route path='/'>
@@ -37,6 +38,7 @@ function App() {
       </Route>
     </Routes>
   </BrowserRouter>
+  </div>
     
   );
 }

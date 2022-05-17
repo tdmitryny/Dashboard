@@ -11,12 +11,15 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
 import { red } from '@mui/material/colors';
 import './sidebar.css';
+import {Link} from "react-router-dom";
 
 export const Sidebar = ()=> {
   return (
     <div className='sidebar'>
       <div className='top'>
-        <div className="logo">EcomAdmin</div>
+        <Link to='/' style={{textDecoration:"none"}}>
+        <div className="logo" >EcomAdmin</div>
+        </Link>
         </div>
         <hr/>
       <div className='center'>
@@ -26,12 +29,17 @@ export const Sidebar = ()=> {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
+          <Link to="/users" style={{textDecoration:"none"}}>
           <li><GroupIcon className='icon'/>
             <span>Users</span>
           </li>
+          </Link>
+          
+          <Link to="/products" style={{textDecoration:"none"}}>
           <li><CreditCardIcon className='icon'/>
             <span>Orders</span>
           </li>
+          </Link>
           <li><LocalShippingIcon className='icon'/>
             <span>Delivery</span>
           </li>
